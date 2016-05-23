@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Jukebox</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+<div id="player">
+
+	<div id="circle">
+	<img src="./images/circular_ext_player2.png">
+	</div>
+
+	<audio id="playlist" src=" "></audio>
+
+	<div id="song_name"></div>
+
+	<div id="buttons">
+		<button id="stopSong">Stop</button>
+		<button id="pauseSong">Pause</button>
+		<button id="playSong">Play</button>
+		<button id="shuffleSong">Shuffle</button>
+		<button id="nextSong">Next</button>
+		<script src="js/script.js"></script>
+	</div>
+
+	<div id="addsong">
+		<form>
+
+			<input id="title">Title</input>
+			<input id="song">Song</input>
+			<input id="URL">URL</input>
+
+			<button id="add" type="button" value="Submit"onclick="jukebox.add()">Add Song</button>
+			
+		</form>
+	</div>
+
+</div>
+	
+</body>
+</html>
