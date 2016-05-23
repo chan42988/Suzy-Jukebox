@@ -40,44 +40,51 @@ body {
 #sadi {
 	z-index: -1;
 	position: relative;
-  top: -27em;
+  top: -32em;
   left: 3em;
+}
+
+#ribbon {
+	z-index: 0;
+	position: relative;
+  top: -27em;
+  left: 4em;
 }
 
 @media all and (max-width: 485px) {
 	#playSong{
 		position: relative;
-    top: -38em;
+    top: -43em;
     left: 1em;
 	}
  }
 
 #nextSong{
 	position: relative;
-  top: -65em;
+  top: -73em;
   left: 33em;
 }
 
 #pauseSong{
 	position: relative;
-  top: -59em;
+  top: -37em;
   left: 183px;
 }
 
 #stopSong{
 	position: relative;
-  top: -666px;
+  top: -366px;
   left: 21em;
 }
 
 #shuffleSong{
 	position: relative;
-  top: -426px;
-  left: 10em;
+  top: -520px;
+  left: 51px;
 }
 
 #addsong {
 	position: relative;
-  top: -29em;
+  top: -36em;
 }
 

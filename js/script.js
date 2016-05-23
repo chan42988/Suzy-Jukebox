@@ -12,6 +12,7 @@ document.getElementById('pauseSong').
 document.getElementById('stopSong').
 	addEventListener("click", function(){
 	jukebox.stop()
+	console.log("stopBtn is working");
 });
 
 // document.getElementById('add').addEventListener("click", function(){
@@ -97,4 +98,4 @@ jukebox.preload(song3)
 
 // jukebox.setAttribute()
 
-document.getElementById("playlist").setAttribute("src", jukebox.songs[1])
+document.getElementById("playlist").setAttribute("src", jukebox.songs[0])
