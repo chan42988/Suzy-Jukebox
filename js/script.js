@@ -3,26 +3,22 @@ document.getElementById('playSong').addEventListener("click", function(){
 	console.log("playBtn is working");
 });
 
-document.getElementById('pauseSong').
-	addEventListener("click", function(){
+document.getElementById('pauseSong').addEventListener("click", function(){
 	jukebox.pause()
 	console.log("pauseBtn is working");
 });
 
-document.getElementById('stopSong').
-	addEventListener("click", function(){
+document.getElementById('stopSong').addEventListener("click", function(){
 	jukebox.stop()
 	console.log("stopBtn is working");
 });
 
-document.getElementById('nextSong').
-	addEventListener("click", function(){
+document.getElementById('nextSong').addEventListener("click", function(){
 	jukebox.next()
 	console.log("nextBtn is working");
 });
 
-	document.getElementById('previousSong').
-	addEventListener("click", function(){
+	document.getElementById('previousSong').addEventListener("click", function(){
 	jukebox.previous()
 	console.log("previousBtn is working");
 });
@@ -36,6 +32,10 @@ document.getElementById('nextSong').
 // 	addEventListener("click", function(){
 // 	jukebox.shuffle()
 // });
+
+// function changeImage() {
+// 	var image = document.getElementById('')
+// }
 
 function Song(title, song, url){
 	this.title = title;
@@ -103,7 +103,7 @@ var Jukebox = function(){
 
 var jukebox = new Jukebox();
 
-var song1 =  ('./audio/EricClapton-Tears.mp3')
+var song1 = ('./audio/EricClapton-Tears.mp3')
 var song2 = ('./audio/Drake-OneDance.mp3')
 var song3 = ('./audio/tumblr_lst5k2lBn11qbnlxno1.mp3');
 

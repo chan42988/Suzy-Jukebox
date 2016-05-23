@@ -1,0 +1,25 @@
+body {
+  background-color: pink; }
+
+#smiley {
+  z-index: -1;
+  position: relative;
+  top: -29em;
+  left: 98px; }
+
+#circle {
+  z-index: 1; }
+
+#ribbon {
+  z-index: 0;
+  position: relative;
+  top: -27em;
+  left: 4em; }
+
+#sunglasses {
+  z-index: 2;
+  position: relative;
+  top: -712px;
+  left: 101px; }
+
+/*# sourceMappingURL=main.css.map */
