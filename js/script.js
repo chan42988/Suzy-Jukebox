@@ -21,6 +21,12 @@ document.getElementById('nextSong').
 	console.log("nextBtn is working");
 });
 
+	document.getElementById('previousSong').
+	addEventListener("click", function(){
+	jukebox.previous()
+	console.log("previousBtn is working");
+});
+
 // document.getElementById('add').addEventListener("click", function(){
 // 	jukebox.add()
 // 	console.log("add is working");
@@ -46,11 +52,11 @@ var Jukebox = function(){
 	}
 
 	this.setAttribute = function(){
-		document.getElementById("song").setAttribute("src", this.songs[i].url)
+		document.getElementById("playlist").setAttribute("src", this.songs[i].url)
 	}
 
 	this.play = function(){
-		document.getElementById("playlist").setAttribute("src", this.songs[0])
+		document.getElementById("playlist").setAttribute("src", this.songs[i])
     document.getElementById("playlist").play()
 	}
 
@@ -64,9 +70,17 @@ var Jukebox = function(){
 	}
 
 	this.next = function(){
-		 document.getElementById(this.songs[i]).pause();
-		 i=++1;
-		 document.getElementById(this.songs[i]).play();
+		 this.pause()
+		 i++;
+		 this.setAttribute()
+		 this.play()
+	}
+
+	this.previous = function(){
+		 this.pause()
+		 i--;
+		 this.setAttribute()
+		 this.play()
 	}
 
 	this.add = function(title, song, URL){

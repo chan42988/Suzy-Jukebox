@@ -5,16 +5,15 @@ body {
   display: block;
   font-size: 1.1em;
   font-weight: bold;
-  text-transform: uppercase;
   padding: 10px 15px;
   margin: 20px auto;
-  color: #ccc;
-  background: -webkit-linear-gradient(#888, #555);
-  background: linear-gradient(#888, #555);
+  background-color: #DB7093;
+  color: white;
+  /*background: linear-gradient(#888, #555);*/
   border: 0 none;
   border-radius: 3px;
   text-shadow: 0 -1px 0 #000;
-  box-shadow: 0 1px 0 #666, 0 5px 0 #444, 0 6px 6px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px 0 #666, 0 5px 0 #444, 0 6px 6px black;
   cursor: pointer; }
 
 #sadi {
@@ -37,7 +36,12 @@ body {
 #nextSong {
   position: relative;
   top: -73em;
-  left: 33em; }
+  left: 29em; }
+
+#previousSong {
+  position: relative;
+  top: -73em;
+  left: -2em; }
 
 #pauseSong {
   position: relative;
