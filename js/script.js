@@ -15,6 +15,12 @@ document.getElementById('stopSong').
 	console.log("stopBtn is working");
 });
 
+document.getElementById('nextSong').
+	addEventListener("click", function(){
+	jukebox.next()
+	console.log("nextBtn is working");
+});
+
 // document.getElementById('add').addEventListener("click", function(){
 // 	jukebox.add()
 // 	console.log("add is working");
@@ -25,11 +31,6 @@ document.getElementById('stopSong').
 // 	jukebox.shuffle()
 // });
 
-// document.getElementById('nextSong').
-// 	addEventListener("click", function(){
-// 	jukebox.next()
-// });
-
 function Song(title, song, url){
 	this.title = title;
 	this.song = song;
@@ -38,17 +39,18 @@ function Song(title, song, url){
 
 var Jukebox = function(){
 	this.songs = [];
+	var i = 0;
 
 	this.preload = function(input){
 		this.songs.push(input)
 	}
 
-	// this.setAttribute = function(){
-	// 	document.getElementById("song").setAttribute("src", this.songs[i].url)
-	// }
+	this.setAttribute = function(){
+		document.getElementById("song").setAttribute("src", this.songs[i].url)
+	}
 
 	this.play = function(){
-		// document.getElementById("playlist").setAttribute("src", this.songs[0])
+		document.getElementById("playlist").setAttribute("src", this.songs[0])
     document.getElementById("playlist").play()
 	}
 
@@ -59,6 +61,12 @@ var Jukebox = function(){
 	this.stop = function(){
 		 document.getElementById("playlist").pause()
 		 document.getElementById("playlist").currentTime = 0
+	}
+
+	this.next = function(){
+		 document.getElementById(this.songs[i]).pause();
+		 i=++1;
+		 document.getElementById(this.songs[i]).play();
 	}
 
 	this.add = function(title, song, URL){
@@ -77,17 +85,12 @@ var Jukebox = function(){
 	// 	 document.getElementById(this.songs[0]).currentTime = 0;
 	// }
 
-	// this.next = function(){
-	// 	 document.getElementById(this.songs[]).pause();
-	// 	 i=+1
-	// 	 document.getElementById(this.songs[]).play();
-	// }
 };
 
 var jukebox = new Jukebox();
 
-var song1 = ('./audio/Naruto-SadnessTaylor.mp3 Davis.mp3')
-var song2 = ('./audio/Drake-One Dance.mp3')
+var song1 =  ('./audio/EricClapton-Tears.mp3')
+var song2 = ('./audio/Drake-OneDance.mp3')
 var song3 = ('./audio/tumblr_lst5k2lBn11qbnlxno1.mp3');
 
 
@@ -98,4 +101,4 @@ jukebox.preload(song3)
 
 // jukebox.setAttribute()
 
-document.getElementById("playlist").setAttribute("src", jukebox.songs[0])
+// document.getElementById("playlist").setAttribute("src", jukebox.songs[0])
