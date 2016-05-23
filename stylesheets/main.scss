@@ -33,13 +33,20 @@ body {
 	cursor: pointer;
 }
 
+#sadi {
+	z-index: -1;
+	position: relative;
+  top: -27em;
+  left: 3em;
+}
+
 @media all and (max-width: 485px) {
-		#playSong{
-			position: relative;
-	    top: -38em;
-	    left: 1em;
-		}
-  }
+	#playSong{
+		position: relative;
+    top: -38em;
+    left: 1em;
+	}
+ }
 
 #nextSong{
 	position: relative;
@@ -47,11 +54,22 @@ body {
   left: 33em;
 }
 
-#sadi {
-	z-index: -1;
+#pauseSong{
 	position: relative;
-  top: -27em;
-  left: 3em;
+  top: -59em;
+  left: 183px;
+}
+
+#stopSong{
+	position: relative;
+  top: -666px;
+  left: 21em;
+}
+
+#shuffleSong{
+	position: relative;
+  top: -416px;
+  left: 5em;
 }
 
 #addsong {
