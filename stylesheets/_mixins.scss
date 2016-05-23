@@ -1,3 +1,7 @@
+@mixin blue($opacity){
+	background-color: rgba(0, 0, 160, $opacity)
+}
+
 @mixin purple($opacity){
 	background-color: rgba(128,0,128, $opacity)
 }

@@ -1,5 +1,5 @@
 body {
-  background-color: rgba(48, 0, 48, 0.6); }
+  background-color: rgba(0, 0, 160, 0.5); }
 
 #playSong {
   display: block;
@@ -45,8 +45,8 @@ body {
 
 #shuffleSong {
   position: relative;
-  top: -416px;
-  left: 5em; }
+  top: -426px;
+  left: 10em; }
 
 #addsong {
   position: relative;

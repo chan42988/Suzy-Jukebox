@@ -85,9 +85,9 @@ var Jukebox = function(){
 
 var jukebox = new Jukebox();
 
-var song1 = ('./audio/tumblr_lst5k2lBn11qbnlxno1.mp3')
-var song2 = ('./audio/MGMT - Electric Feel.mp3') 
-var song3 = ('./audio/Jimmy Eat World - Sweetness (Lyrics).mp3');
+var song1 = ('./audio/Naruto-SadnessTaylor.mp3 Davis.mp3')
+var song2 = ('./audio/Drake-One Dance.mp3')
+var song3 = ('./audio/tumblr_lst5k2lBn11qbnlxno1.mp3');
 
 
 jukebox.preload(song1)
@@ -97,4 +97,4 @@ jukebox.preload(song3)
 
 // jukebox.setAttribute()
 
-document.getElementById("playlist").setAttribute("src", jukebox.songs[0])
+document.getElementById("playlist").setAttribute("src", jukebox.songs[1])

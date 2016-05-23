@@ -1,5 +1,9 @@
 @import 'mixins';
 
+@mixin blue($opacity) {    
+  background-color: rgba(0, 0, 160, $opacity)
+}
+
 @mixin purple($opacity) {    
   background-color: rgba(48,0,48, $opacity)
 }
@@ -13,7 +17,7 @@
 }
 
 body {
-  @include purple(.6)
+  @include blue(.5)
 }
 
 #playSong {
@@ -68,8 +72,8 @@ body {
 
 #shuffleSong{
 	position: relative;
-  top: -416px;
-  left: 5em;
+  top: -426px;
+  left: 10em;
 }
 
 #addsong {
