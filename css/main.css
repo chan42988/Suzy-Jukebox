@@ -1,5 +1,5 @@
 body {
-  background-color: rgba(48, 0, 48, 0.7); }
+  background-color: rgba(48, 0, 48, 0.6); }
 
 #playSong {
   display: block;
@@ -17,10 +17,24 @@ body {
   box-shadow: 0 1px 0 #666, 0 5px 0 #444, 0 6px 6px rgba(0, 0, 0, 0.6);
   cursor: pointer; }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 485px) {
   #playSong {
     position: relative;
-    top: -16em;
+    top: -38em;
     left: 1em; } }
+#nextSong {
+  position: relative;
+  top: -65em;
+  left: 33em; }
+
+#sadi {
+  z-index: -1;
+  position: relative;
+  top: -27em;
+  left: 3em; }
+
+#addsong {
+  position: relative;
+  top: -29em; }
 
 /*# sourceMappingURL=main.css.map */

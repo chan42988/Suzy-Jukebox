@@ -13,7 +13,7 @@
 }
 
 body {
-  @include purple(.7)
+  @include purple(.6)
 }
 
 #playSong {
@@ -33,11 +33,29 @@ body {
 	cursor: pointer;
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 485px) {
 		#playSong{
 			position: relative;
-	    top: -16em;
+	    top: -38em;
 	    left: 1em;
 		}
   }
+
+#nextSong{
+	position: relative;
+  top: -65em;
+  left: 33em;
+}
+
+#sadi {
+	z-index: -1;
+	position: relative;
+  top: -27em;
+  left: 3em;
+}
+
+#addsong {
+	position: relative;
+  top: -29em;
+}
 

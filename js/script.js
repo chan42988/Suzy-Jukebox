@@ -37,7 +37,6 @@ function Song(title, song, url){
 
 var Jukebox = function(){
 	this.songs = [];
-	var
 
 	this.preload = function(input){
 		this.songs.push(input)
