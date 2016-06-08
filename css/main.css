@@ -2,14 +2,15 @@ body {
   background-color: rgba(0, 0, 160, 0.5); }
 
 #playSong {
-  display: block;
+  position: relative;
+  bottom: 739px;
+  left: 132px;
   font-size: 1.1em;
   font-weight: bold;
   padding: 10px 15px;
   margin: 20px auto;
   background-color: #DB7093;
   color: white;
-  /*background: linear-gradient(#888, #555);*/
   border: 0 none;
   border-radius: 3px;
   text-shadow: 0 -1px 0 #000;
@@ -28,38 +29,33 @@ body {
   top: -27em;
   left: 4em; }
 
-@media all and (max-width: 485px) {
-  #playSong {
-    position: relative;
-    top: -43em;
-    left: 1em; } }
 #nextSong {
   position: relative;
-  top: -73em;
-  left: 29em; }
+  top: -68em;
+  left: 17em; }
 
 #previousSong {
   position: relative;
-  top: -73em;
-  left: -2em; }
+  top: -68em;
+  left: -14em; }
 
 #pauseSong {
   position: relative;
-  top: -420px;
-  left: 63px; }
+  top: -456px;
+  left: 454px; }
 
 #stopSong {
   position: relative;
-  top: -420px;
-  left: 159px; }
+  top: -476px;
+  left: 498px; }
 
 #shuffleSong {
   position: relative;
-  top: -520px;
-  left: 51px; }
+  top: -436px;
+  left: 358px; }
 
 #addsong {
   position: relative;
-  top: -36em; }
+  top: -34em; }
 
 /*# sourceMappingURL=main.css.map */
