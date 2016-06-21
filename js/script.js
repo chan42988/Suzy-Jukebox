@@ -87,11 +87,12 @@ var Jukebox = function(){
 
 		var title = document.getElementById("title").value
 		var song = document.getElementById("song").value
-		var URL = document.getElementById("URL").value
+		var url = document.getElementById("url").value
 
-		var banana = new Song(title, song, URL);
+		var playlist = new Song(title, song, url);
 
-		this.songs.push(banana)
+		this.songs.push(playlist.url)
+
 	}
 
 	// this.shuffle = function(){
