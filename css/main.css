@@ -1,10 +1,23 @@
 body {
-  background-color: rgba(0, 0, 160, 0.5); }
+  background-color: rgba(0, 0, 160, 0.5);
+  height: 100%; 
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+#circle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
 
 #playSong {
   position: relative;
   bottom: 739px;
-  left: 132px;
+  left: 534px;
   font-size: 1.1em;
   font-weight: bold;
   padding: 10px 15px;
@@ -15,47 +28,58 @@ body {
   border-radius: 3px;
   text-shadow: 0 -1px 0 #000;
   box-shadow: 0 1px 0 #666, 0 5px 0 #444, 0 6px 6px black;
-  cursor: pointer; }
+  cursor: pointer; 
+}
 
 #sadi {
   z-index: -1;
   position: relative;
   top: -32em;
-  left: 3em; }
+  left: 14px;
+}
 
 #ribbon {
   z-index: 0;
   position: relative;
   top: -27em;
-  left: 4em; }
+  right: 110px;
+}
 
 #nextSong {
+  margin: auto;
   position: relative;
   top: -68em;
-  left: 17em; }
+  left: 644px; 
+}
 
 #previousSong {
   position: relative;
   top: -68em;
-  left: -14em; }
+  left: 298px; 
+}
 
 #pauseSong {
   position: relative;
   top: -456px;
-  left: 454px; }
+  left: 818px; 
+}
 
 #stopSong {
   position: relative;
   top: -476px;
-  left: 498px; }
+  left: 862px; 
+}
 
-#shuffleSong {
+/*#shuffleSong {
   position: relative;
   top: -436px;
-  left: 358px; }
+  left: 358px; 
+}*/
 
 #addsong {
   position: relative;
-  top: -34em; }
+  top: -34em;
+  left: 364px; 
+}
 
 /*# sourceMappingURL=main.css.map */
