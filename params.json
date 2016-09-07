@@ -1,0 +1,6 @@
+{
+  "name": "Suzy-Jukebox",
+  "tagline": "",
+  "body": "Jukebox that changes its mood according to the type of song being played utilizing Javascript, HTML, and CSS.",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
